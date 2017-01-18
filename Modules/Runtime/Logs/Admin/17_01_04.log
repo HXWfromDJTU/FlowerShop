@@ -1,0 +1,351 @@
+[ 2017-01-04T16:56:34+08:00 ] ::1 /ffhysc/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2017-01-04T16:56:41+08:00 ] ::1 /ffhysc/admin.php/admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.1184s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0047s ]
+SQL: SELECT `id`,`adminPSD` FROM `admin` WHERE `adminName` = 'admin'  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2017-01-04T16:56:41+08:00 ] ::1 /ffhysc/admin.php/index/mainPanel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001613s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2017-01-04T16:56:42+08:00 ] ::1 /ffhysc/admin.php/admin/loadadminmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0871s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0067s ]
+SQL: SELECT `nickname` FROM `admin` WHERE `id` = 1  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2017-01-04T16:56:47+08:00 ] ::1 /ffhysc/admin.php/index/userManage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2017-01-04T16:56:48+08:00 ] ::1 /ffhysc/admin.php/admin/loadusermessagelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0221s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0078s ]
+NOTIC: [8] Undefined index: userID D:\PHP\myPHP\ffhysc\Modules\Admin\Controller\AdminController.class.php 第 46 行.
+SQL: SELECT `id`,`nickname`,`headImgSrc`,`balance`,`birthday`,`introduction` FROM `user`  [ RunTime:0.3070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001386s ]
+
+[ 2017-01-04T16:56:48+08:00 ] ::1 /ffhysc/admin.php/index/null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+ERR: 非法操作:null
+
+[ 2017-01-04T16:56:50+08:00 ] ::1 /ffhysc/admin.php/index/editUser.html?userID=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001587s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001579s ]
+
+[ 2017-01-04T16:56:54+08:00 ] ::1 /ffhysc/admin.php/admin/loadusermessagelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0057s ]
+NOTIC: [8] Undefined index: userID D:\PHP\myPHP\ffhysc\Modules\Admin\Controller\AdminController.class.php 第 46 行.
+SQL: SELECT `id`,`nickname`,`headImgSrc`,`balance`,`birthday`,`introduction` FROM `user`  [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001766s ]
+
+[ 2017-01-04T16:56:54+08:00 ] ::1 /ffhysc/admin.php/index/null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000166s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001303s ]
+ERR: 非法操作:null
+
+[ 2017-01-04T16:56:55+08:00 ] ::1 /ffhysc/admin.php/index/editUser.html?userID=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000526s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002008s ]
+
+[ 2017-01-04T16:56:55+08:00 ] ::1 /ffhysc/admin.php/admin/loadusermessagelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002450s ]
+
+[ 2017-01-04T16:57:21+08:00 ] ::1 /ffhysc/admin.php/admin/loadusermessagelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001425s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0089s ]
+NOTIC: [8] Undefined index: userID D:\PHP\myPHP\ffhysc\Modules\Admin\Controller\AdminController.class.php 第 46 行.
+SQL: SELECT `id`,`nickname`,`headImgSrc`,`balance`,`birthday`,`introduction` FROM `user`  [ RunTime:0.0024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2017-01-04T16:57:21+08:00 ] ::1 /ffhysc/admin.php/index/null
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001330s ]
+ERR: 非法操作:null
+
+[ 2017-01-04T16:57:22+08:00 ] ::1 /ffhysc/admin.php/admin/loadadminmessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0084s ]
+SQL: SELECT `nickname` FROM `admin` WHERE `id` = 1  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001151s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001410s ]
+
+[ 2017-01-04T16:57:23+08:00 ] ::1 /ffhysc/admin.php/index/goodManage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2017-01-04T16:57:23+08:00 ] ::1 /ffhysc/admin.php/admin/loadgoodmessagelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001684s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0107s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0075s ]
+NOTIC: [8] Undefined index: goodID D:\PHP\myPHP\ffhysc\Modules\Admin\Controller\AdminController.class.php 第 89 行.
+SQL: SELECT `id`,`name`,`img1`,`price`,`storage`,`monthlySale`,`description` FROM `goods`  [ RunTime:0.0199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003343s ]
+
+[ 2017-01-04T16:57:25+08:00 ] ::1 /ffhysc/admin.php/index/editGood.html?goodID=504
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001450s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000286s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000579s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001238s ]
+
+[ 2017-01-04T16:57:25+08:00 ] ::1 /ffhysc/admin.php/admin/loadgoodmessagelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001602s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0871s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `goods` WHERE `id` = 504  [ RunTime:0.0189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001649s ]
+
+[ 2017-01-04T16:57:26+08:00 ] ::1 /ffhysc/admin.php/index/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+ERR: 非法操作:undefined
+

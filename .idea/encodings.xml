@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Modules/Admin/Controller/DealorgController.class.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Modules/Admin/Controller/RetlistController.class.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Modules/Admin/Model/CourseExamModel.class.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Modules/Admin/Model/CourseExamOrgModel.class.php" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

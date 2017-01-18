@@ -1,0 +1,20 @@
+[ 2016-12-28T22:41:53+08:00 ] ::1 /ffhysc/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.237703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.108072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.108634s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000417s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000864s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.574685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.575111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.100417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.100786s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.072819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.073197s ]
+

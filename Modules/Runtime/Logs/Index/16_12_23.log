@@ -1,0 +1,3624 @@
+[ 2016-12-23T15:16:47+08:00 ] ::1 /ffhysc/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.063610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.064546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.064744s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017125s ]
+
+[ 2016-12-23T15:17:03+08:00 ] ::1 /ffhysc/index.php/user/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.7282s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.1180s ]
+SQL: SELECT `id`,`password` FROM `user` WHERE `username` = 'huangxuanwei'  [ RunTime:0.1693s ]
+SQL: SELECT `activeness` FROM `user` LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `user` SET `activeness`='5' WHERE ( id=4 ) [ RunTime:0.2894s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2016-12-23T15:17:03+08:00 ] ::1 /ffhysc/index.php/user/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0044s ]
+SQL: SELECT `id`,`password` FROM `user` WHERE `username` = 'huangxuanwei'  [ RunTime:0.0003s ]
+SQL: SELECT `activeness` FROM `user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `user` SET `activeness`='5' WHERE ( id=4 ) [ RunTime:0.0734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001011s ]
+
+[ 2016-12-23T15:17:03+08:00 ] ::1 /ffhysc/index.php/index/home.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000669s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.108101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2016-12-23T15:17:05+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.1448s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.2144s ]
+SQL: select * from Goods order by monthlySale desc limit 0,5 [ RunTime:0.0962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2016-12-23T15:17:06+08:00 ] ::1 /ffhysc/index.php/ad/loadad.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.1352s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0043s ]
+SQL: SELECT `img1`,`img2`,`img3` FROM `ad` WHERE `position` = 'home'  [ RunTime:0.5578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001125s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2016-12-23T15:17:06+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001349s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0505s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0080s ]
+SQL: select * from Service order by monthlySale desc limit 0,5 [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001453s ]
+
+[ 2016-12-23T15:17:06+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0353s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001218s ]
+
+[ 2016-12-23T15:17:06+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.1718s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'huazhi'  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001086s ]
+
+[ 2016-12-23T15:17:06+08:00 ] ::1 /ffhysc/index.php/goods/loadservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0169s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `service` WHERE `serviceType` = 'huayike'  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001318s ]
+
+[ 2016-12-23T15:17:06+08:00 ] ::1 /ffhysc/index.php/shopcart/countorderstatusnum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0561s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0891s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0358s ]
+SQL: select orderstatus,count(distinct orderid) as num  from orders where customerID="4" group by orderstatus [ RunTime:0.0996s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2016-12-23T15:17:07+08:00 ] ::1 /ffhysc/index.php/index/width=%2280%22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+ERR: 非法操作:width="80"
+
+[ 2016-12-23T15:17:26+08:00 ] ::1 /ffhysc/index.php/index/detail.html?goodID=2&type=service
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2016-12-23T15:17:26+08:00 ] ::1 /ffhysc/index.php/goods/loadgooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `service` WHERE `id` = 2  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2016-12-23T15:17:26+08:00 ] ::1 /ffhysc/index.php/index/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+ERR: 非法操作:undefined
+
+[ 2016-12-23T15:17:35+08:00 ] ::1 /ffhysc/index.php/shopcart/makenewlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0582s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0041s ]
+SQL: INSERT INTO `orders` (`orderID`,`totalMoney`,`customerID`,`orderStatus`,`orderTime`,`goodID`) VALUES ('CSiw2e4s','45151','4','0','2016-12-23 15:17:34','2') [ RunTime:0.2071s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\PHP\myPHP\ffhysc\ThinkPHP\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `shopcart` WHERE `goodID` = '2' AND `customerID` = 4 [ RunTime:0.0933s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000881s ]
+
+[ 2016-12-23T15:17:35+08:00 ] ::1 /ffhysc/index.php/index/confirmed.html?orderID=CSiw2e4s&orderTime=2016-12-23%2015:17:34
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000932s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001212s ]
+
+[ 2016-12-23T15:17:35+08:00 ] ::1 /ffhysc/index.php/shopcart/loadconfirmlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `orders` INNER JOIN goods ON goods.id=orders.goodID  WHERE `orderID` = 'CSiw2e4s' AND `customerID` = '4' AND `orderStatus` = 0  [ RunTime:0.0491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000868s ]
+
+[ 2016-12-23T15:17:35+08:00 ] ::1 /ffhysc/index.php/shopcart/loadconfirmlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `orders` INNER JOIN service ON service.id=orders.goodID  WHERE `orderID` = 'CSiw2e4s' AND `customerID` = '4' AND `orderStatus` = 0  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2016-12-23T15:17:35+08:00 ] ::1 /ffhysc/index.php/user/loadaddressmsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `receive` WHERE `userID` = 4  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2016-12-23T15:17:35+08:00 ] ::1 /ffhysc/index.php/index/width=%2280%22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+ERR: 非法操作:width="80"
+
+[ 2016-12-23T15:17:55+08:00 ] ::1 /ffhysc/index.php/index/address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001629s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000522s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001170s ]
+
+[ 2016-12-23T15:17:55+08:00 ] ::1 /ffhysc/index.php/user/loadaddressmsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `receive` WHERE `userID` = 4  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2016-12-23T15:17:56+08:00 ] ::1 /ffhysc/index.php/user/changereceivedefault.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0161s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\PHP\myPHP\ffhysc\ThinkPHP\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `receive` SET `default`='0',`userID`='4' WHERE ( userID=4 ) [ RunTime:0.1139s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\PHP\myPHP\ffhysc\ThinkPHP\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `receive` SET `receiveID`='4',`default`='1' WHERE ( receiveID=4 ) [ RunTime:0.0773s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2016-12-23T15:17:56+08:00 ] ::1 /ffhysc/index.php/user/changereceivedefault.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0256s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\PHP\myPHP\ffhysc\ThinkPHP\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `receive` SET `default`='0',`userID`='4' WHERE ( userID=4 ) [ RunTime:0.1230s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\PHP\myPHP\ffhysc\ThinkPHP\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `receive` SET `receiveID`='4',`default`='1' WHERE ( receiveID=4 ) [ RunTime:0.1119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001055s ]
+
+[ 2016-12-23T15:17:57+08:00 ] ::1 /ffhysc/index.php/shopcart/loadconfirmlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0236s ]
+SQL: SELECT * FROM `orders` INNER JOIN goods ON goods.id=orders.goodID  WHERE `orderID` = 'CSiw2e4s' AND `customerID` = '4' AND `orderStatus` = 0  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2016-12-23T15:17:57+08:00 ] ::1 /ffhysc/index.php/shopcart/loadconfirmlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0221s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `orders` INNER JOIN service ON service.id=orders.goodID  WHERE `orderID` = 'CSiw2e4s' AND `customerID` = '4' AND `orderStatus` = 0  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2016-12-23T15:17:57+08:00 ] ::1 /ffhysc/index.php/user/loadaddressmsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0272s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `receive` WHERE `userID` = 4  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2016-12-23T15:17:57+08:00 ] ::1 /ffhysc/index.php/index/width=%2280%22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+ERR: 非法操作:width="80"
+
+[ 2016-12-23T17:13:14+08:00 ] ::1 /ffhysc/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020453s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000385s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013668s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013826s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001173s ]
+
+[ 2016-12-23T17:13:36+08:00 ] ::1 /ffhysc/index.php/user/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0046s ]
+SQL: SELECT `id`,`password` FROM `user` WHERE `username` = 'huangxuanwei'  [ RunTime:0.0005s ]
+SQL: SELECT `activeness` FROM `user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `user` SET `activeness`='5' WHERE ( id=4 ) [ RunTime:0.0790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2016-12-23T17:13:36+08:00 ] ::1 /ffhysc/index.php/index/home.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001380s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000472s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2016-12-23T17:13:36+08:00 ] ::1 /ffhysc/index.php/ad/loadad.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0063s ]
+SQL: SELECT `img1`,`img2`,`img3` FROM `ad` WHERE `position` = 'home'  [ RunTime:0.0037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001442s ]
+
+[ 2016-12-23T17:13:37+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0045s ]
+SQL: select * from Goods order by monthlySale desc limit 0,5 [ RunTime:0.0651s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003376s ]
+
+[ 2016-12-23T17:13:37+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001428s ]
+
+[ 2016-12-23T17:13:37+08:00 ] ::1 /ffhysc/index.php/goods/loadservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `service` WHERE `serviceType` = 'huayike'  [ RunTime:0.0156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002912s ]
+
+[ 2016-12-23T17:13:37+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'huazhi'  [ RunTime:0.0491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001263s ]
+
+[ 2016-12-23T17:13:38+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0071s ]
+SQL: select * from Service order by monthlySale desc limit 0,5 [ RunTime:0.0253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001164s ]
+
+[ 2016-12-23T17:13:38+08:00 ] ::1 /ffhysc/index.php/shopcart/countorderstatusnum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0319s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0076s ]
+SQL: select orderstatus,count(distinct orderid) as num  from orders where customerID="4" group by orderstatus [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001214s ]
+
+[ 2016-12-23T17:14:08+08:00 ] ::1 /ffhysc/index.php/index/list.html?orderStatus=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000906s ]
+
+[ 2016-12-23T17:14:08+08:00 ] ::1 /ffhysc/index.php/shopcart/loadorderbizlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0066s ]
+SQL: SELECT `orderid`,`img1`,`name`,`totalmoney` FROM `orders` INNER JOIN service ON service.id=orders.goodID  WHERE `orderStatus` = '0' GROUP BY orderID  [ RunTime:0.0055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001152s ]
+
+[ 2016-12-23T17:14:08+08:00 ] ::1 /ffhysc/index.php/shopcart/loadorderbizlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0045s ]
+SQL: SELECT `orderid`,`img1`,`name`,`totalmoney` FROM `orders` INNER JOIN goods ON goods.id=orders.goodID  WHERE `orderStatus` = '0' GROUP BY orderID  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000839s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2016-12-23T17:14:08+08:00 ] ::1 /ffhysc/index.php/shopcart/loadorderbizlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0051s ]
+SQL: SELECT `orderid`,`img1`,`name`,`totalmoney` FROM `orders` INNER JOIN goods ON goods.id=orders.goodID  WHERE `orderStatus` = '0' GROUP BY orderID  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2016-12-23T17:14:08+08:00 ] ::1 /ffhysc/index.php/shopcart/loadorderbizlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001444s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0075s ]
+SQL: SELECT `orderid`,`img1`,`name`,`totalmoney` FROM `orders` INNER JOIN service ON service.id=orders.goodID  WHERE `orderStatus` = '0' GROUP BY orderID  [ RunTime:0.0043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001157s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001423s ]
+
+[ 2016-12-23T17:16:41+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0102s ]
+SQL: select * from Goods order by monthlySale desc limit 0,5 [ RunTime:0.0875s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001825s ]
+
+[ 2016-12-23T17:16:41+08:00 ] ::1 /ffhysc/index.php/ad/loadad.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000987s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0064s ]
+SQL: SELECT `img1`,`img2`,`img3` FROM `ad` WHERE `position` = 'home'  [ RunTime:0.0044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001718s ]
+
+[ 2016-12-23T17:16:41+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0072s ]
+SQL: select * from Service order by monthlySale desc limit 0,5 [ RunTime:0.0181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002371s ]
+
+[ 2016-12-23T17:16:42+08:00 ] ::1 /ffhysc/index.php/goods/loadservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `service` WHERE `serviceType` = 'huayike'  [ RunTime:0.0128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001438s ]
+
+[ 2016-12-23T17:16:42+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4  [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001400s ]
+
+[ 2016-12-23T17:16:42+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000381s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001647s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'huazhi'  [ RunTime:0.0370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001383s ]
+
+[ 2016-12-23T17:16:42+08:00 ] ::1 /ffhysc/index.php/shopcart/countorderstatusnum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001848s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0041s ]
+SQL: select orderstatus,count(distinct orderid) as num  from orders where customerID="4" group by orderstatus [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2016-12-23T17:17:53+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'ganhua'  [ RunTime:0.0254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001539s ]
+
+[ 2016-12-23T17:17:53+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'huaqi'  [ RunTime:0.0170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001266s ]
+
+[ 2016-12-23T17:17:54+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'gongju'  [ RunTime:0.0180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001873s ]
+
+[ 2016-12-23T17:17:57+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'zhoubian'  [ RunTime:0.0209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004834s ]
+
+[ 2016-12-23T17:17:58+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001221s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0338s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'shenmixiang'  [ RunTime:0.0171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001164s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001395s ]
+
+[ 2016-12-23T17:18:00+08:00 ] ::1 /ffhysc/index.php/goods/loadservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0447s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `service` WHERE `serviceType` = 'xunlianying'  [ RunTime:0.0082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001146s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001433s ]
+
+[ 2016-12-23T17:18:02+08:00 ] ::1 /ffhysc/index.php/goods/loadservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0398s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `service` WHERE `serviceType` = 'xunlianying'  [ RunTime:0.0073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001587s ]
+
+[ 2016-12-23T17:18:04+08:00 ] ::1 /ffhysc/index.php/index/shopcart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001530s ]
+
+[ 2016-12-23T17:18:05+08:00 ] ::1 /ffhysc/index.php/goods/loadshopcart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `goods` INNER JOIN shopcart ON goods.id=shopcart.goodID  WHERE `customerID` = '4'  [ RunTime:0.0167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001629s ]
+
+[ 2016-12-23T17:18:05+08:00 ] ::1 /ffhysc/index.php/goods/loadshopcart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `service` INNER JOIN shopcart ON service.id=shopcart.goodID  WHERE `customerID` = '4'  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000985s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001227s ]
+
+[ 2016-12-23T17:18:11+08:00 ] ::1 /ffhysc/index.php/ad/loadad.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0065s ]
+SQL: SELECT `img1`,`img2`,`img3` FROM `ad` WHERE `position` = 'home'  [ RunTime:0.0051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001143s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001448s ]
+
+[ 2016-12-23T17:18:12+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0077s ]
+SQL: select * from Goods order by monthlySale desc limit 0,5 [ RunTime:0.0925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005595s ]
+
+[ 2016-12-23T17:18:12+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001991s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001361s ]
+
+[ 2016-12-23T17:18:12+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0094s ]
+SQL: select * from Service order by monthlySale desc limit 0,5 [ RunTime:0.0200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002206s ]
+
+[ 2016-12-23T17:18:12+08:00 ] ::1 /ffhysc/index.php/goods/loadservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001186s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `service` WHERE `serviceType` = 'huayike'  [ RunTime:0.0129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001143s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001559s ]
+
+[ 2016-12-23T17:18:12+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008551s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'huazhi'  [ RunTime:0.0439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001721s ]
+
+[ 2016-12-23T17:18:12+08:00 ] ::1 /ffhysc/index.php/shopcart/countorderstatusnum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0096s ]
+SQL: select orderstatus,count(distinct orderid) as num  from orders where customerID="4" group by orderstatus [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001809s ]
+
+[ 2016-12-23T17:18:54+08:00 ] ::1 /ffhysc/index.php/index/list.html?orderStatus=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003799s ]
+
+[ 2016-12-23T17:18:54+08:00 ] ::1 /ffhysc/index.php/shopcart/loadorderbizlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0078s ]
+SQL: SELECT `orderid`,`img1`,`name`,`totalmoney` FROM `orders` INNER JOIN goods ON goods.id=orders.goodID  WHERE `orderStatus` = '0' GROUP BY orderID  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001240s ]
+
+[ 2016-12-23T17:18:54+08:00 ] ::1 /ffhysc/index.php/shopcart/loadorderbizlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0073s ]
+SQL: SELECT `orderid`,`img1`,`name`,`totalmoney` FROM `orders` INNER JOIN service ON service.id=orders.goodID  WHERE `orderStatus` = '0' GROUP BY orderID  [ RunTime:0.0044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003505s ]
+
+[ 2016-12-23T17:18:54+08:00 ] ::1 /ffhysc/index.php/shopcart/loadorderbizlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0063s ]
+SQL: SELECT `orderid`,`img1`,`name`,`totalmoney` FROM `orders` INNER JOIN goods ON goods.id=orders.goodID  WHERE `orderStatus` = '0' GROUP BY orderID  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001604s ]
+
+[ 2016-12-23T17:18:54+08:00 ] ::1 /ffhysc/index.php/shopcart/loadorderbizlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0074s ]
+SQL: SELECT `orderid`,`img1`,`name`,`totalmoney` FROM `orders` INNER JOIN service ON service.id=orders.goodID  WHERE `orderStatus` = '0' GROUP BY orderID  [ RunTime:0.0046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001640s ]
+
+[ 2016-12-23T17:18:56+08:00 ] ::1 /ffhysc/index.php/shopcart/loadorderbizlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0165s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0062s ]
+SQL: SELECT `orderid`,`img1`,`name`,`totalmoney` FROM `orders` INNER JOIN goods ON goods.id=orders.goodID  WHERE `orderStatus` = '2' GROUP BY orderID  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001823s ]
+
+[ 2016-12-23T17:18:56+08:00 ] ::1 /ffhysc/index.php/shopcart/loadorderbizlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0076s ]
+SQL: SELECT `orderid`,`img1`,`name`,`totalmoney` FROM `orders` INNER JOIN service ON service.id=orders.goodID  WHERE `orderStatus` = '0' GROUP BY orderID  [ RunTime:0.0052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001881s ]
+
+[ 2016-12-23T17:18:58+08:00 ] ::1 /ffhysc/index.php/ad/loadad.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0276s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0077s ]
+SQL: SELECT `img1`,`img2`,`img3` FROM `ad` WHERE `position` = 'home'  [ RunTime:0.0044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001327s ]
+
+[ 2016-12-23T17:18:58+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4  [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001280s ]
+
+[ 2016-12-23T17:18:58+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0179s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'huazhi'  [ RunTime:0.0397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001533s ]
+
+[ 2016-12-23T17:18:59+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0363s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0075s ]
+SQL: select * from Goods order by monthlySale desc limit 0,5 [ RunTime:0.0741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001771s ]
+
+[ 2016-12-23T17:18:59+08:00 ] ::1 /ffhysc/index.php/goods/loadservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0542s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0345s ]
+SQL: SELECT * FROM `service` WHERE `serviceType` = 'huayike'  [ RunTime:0.0128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001756s ]
+
+[ 2016-12-23T17:18:59+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0080s ]
+SQL: select * from Service order by monthlySale desc limit 0,5 [ RunTime:0.0246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002325s ]
+
+[ 2016-12-23T17:18:59+08:00 ] ::1 /ffhysc/index.php/shopcart/countorderstatusnum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001205s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0289s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0094s ]
+SQL: select orderstatus,count(distinct orderid) as num  from orders where customerID="4" group by orderstatus [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001255s ]
+
+[ 2016-12-23T17:19:06+08:00 ] ::1 /ffhysc/index.php/index/my_message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001228s ]
+
+[ 2016-12-23T17:19:09+08:00 ] ::1 /ffhysc/index.php/index/my_message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001667s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000875s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000953s ]
+
+[ 2016-12-23T17:19:09+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0655s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001117s ]
+
+[ 2016-12-23T17:19:24+08:00 ] ::1 /ffhysc/index.php/index/my_message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001368s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2016-12-23T17:19:24+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002404s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000905s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001051s ]
+
+[ 2016-12-23T17:19:26+08:00 ] ::1 /ffhysc/index.php/index/home.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000298s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000654s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001861s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002154s ]
+
+[ 2016-12-23T17:19:26+08:00 ] ::1 /ffhysc/index.php/ad/loadad.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0077s ]
+SQL: SELECT `img1`,`img2`,`img3` FROM `ad` WHERE `position` = 'home'  [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001536s ]
+
+[ 2016-12-23T17:19:27+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0063s ]
+SQL: select * from Goods order by monthlySale desc limit 0,5 [ RunTime:0.1013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002073s ]
+
+[ 2016-12-23T17:19:27+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0072s ]
+SQL: select * from Service order by monthlySale desc limit 0,5 [ RunTime:0.0268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006802s ]
+
+[ 2016-12-23T17:19:27+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001641s ]
+
+[ 2016-12-23T17:19:27+08:00 ] ::1 /ffhysc/index.php/goods/loadservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000956s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003718s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `service` WHERE `serviceType` = 'huayike'  [ RunTime:0.0124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008623s ]
+
+[ 2016-12-23T17:19:27+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000130s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'huazhi'  [ RunTime:0.0491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003351s ]
+
+[ 2016-12-23T17:19:27+08:00 ] ::1 /ffhysc/index.php/shopcart/countorderstatusnum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0051s ]
+SQL: select orderstatus,count(distinct orderid) as num  from orders where customerID="4" group by orderstatus [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001249s ]
+
+[ 2016-12-23T17:19:29+08:00 ] ::1 /ffhysc/index.php/index/my_message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000500s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001957s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001255s ]
+
+[ 2016-12-23T17:29:24+08:00 ] ::1 /ffhysc/index.php/index/my_message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001943s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2016-12-23T17:29:24+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0238s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001338s ]
+
+[ 2016-12-23T17:29:28+08:00 ] ::1 /ffhysc/index.php/index/home.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001723s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002579s ]
+
+[ 2016-12-23T17:29:29+08:00 ] ::1 /ffhysc/index.php/ad/loadad.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0066s ]
+SQL: SELECT `img1`,`img2`,`img3` FROM `ad` WHERE `position` = 'home'  [ RunTime:0.0044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001321s ]
+
+[ 2016-12-23T17:29:29+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0085s ]
+SQL: select * from Goods order by monthlySale desc limit 0,5 [ RunTime:0.1033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001792s ]
+
+[ 2016-12-23T17:29:30+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001458s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0080s ]
+SQL: select * from Service order by monthlySale desc limit 0,5 [ RunTime:0.0281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005267s ]
+
+[ 2016-12-23T17:29:30+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001390s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001995s ]
+
+[ 2016-12-23T17:29:30+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001160s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'huazhi'  [ RunTime:0.0524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003490s ]
+
+[ 2016-12-23T17:29:30+08:00 ] ::1 /ffhysc/index.php/goods/loadservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001467s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `service` WHERE `serviceType` = 'huayike'  [ RunTime:0.0103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002251s ]
+
+[ 2016-12-23T17:29:30+08:00 ] ::1 /ffhysc/index.php/shopcart/countorderstatusnum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0047s ]
+SQL: select orderstatus,count(distinct orderid) as num  from orders where customerID="4" group by orderstatus [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001020s ]
+
+[ 2016-12-23T17:29:32+08:00 ] ::1 /ffhysc/index.php/index/my_message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001986s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2016-12-23T17:30:03+08:00 ] ::1 /ffhysc/index.php/index/my_message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000540s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000740s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000965s ]
+
+[ 2016-12-23T17:30:05+08:00 ] ::1 /ffhysc/index.php/index/my_message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2016-12-23T17:30:19+08:00 ] ::1 /ffhysc/index.php/index/my_message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001618s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2016-12-23T17:30:20+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0398s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001016s ]
+
+[ 2016-12-23T17:30:39+08:00 ] ::1 /ffhysc/index.php/index/home.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000376s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001383s ]
+
+[ 2016-12-23T17:30:40+08:00 ] ::1 /ffhysc/index.php/ad/loadad.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0063s ]
+SQL: SELECT `img1`,`img2`,`img3` FROM `ad` WHERE `position` = 'home'  [ RunTime:0.0047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001454s ]
+
+[ 2016-12-23T17:30:40+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0087s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0062s ]
+SQL: select * from Service order by monthlySale desc limit 0,5 [ RunTime:0.0211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001680s ]
+
+[ 2016-12-23T17:30:40+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001716s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0068s ]
+SQL: select * from Goods order by monthlySale desc limit 0,5 [ RunTime:0.0856s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002320s ]
+
+[ 2016-12-23T17:30:40+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'huazhi'  [ RunTime:0.0365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002100s ]
+
+[ 2016-12-23T17:30:40+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001420s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001411s ]
+
+[ 2016-12-23T17:30:41+08:00 ] ::1 /ffhysc/index.php/goods/loadservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001330s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `service` WHERE `serviceType` = 'huayike'  [ RunTime:0.0125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001588s ]
+
+[ 2016-12-23T17:30:41+08:00 ] ::1 /ffhysc/index.php/shopcart/countorderstatusnum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002303s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0051s ]
+SQL: select orderstatus,count(distinct orderid) as num  from orders where customerID="4" group by orderstatus [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+
+[ 2016-12-23T17:30:41+08:00 ] ::1 /ffhysc/index.php/index/my_message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2016-12-23T17:31:10+08:00 ] ::1 /ffhysc/index.php/index/detail.html?goodID=2&type=service
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000394s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001547s ]
+
+[ 2016-12-23T17:31:10+08:00 ] ::1 /ffhysc/index.php/goods/loadgooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `service` WHERE `id` = 2  [ RunTime:0.0085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001393s ]
+
+[ 2016-12-23T17:31:11+08:00 ] ::1 /ffhysc/index.php/index/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+ERR: 非法操作:undefined
+
+[ 2016-12-23T17:31:27+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0062s ]
+SQL: select * from Goods order by monthlySale desc limit 0,5 [ RunTime:0.0757s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001118s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001438s ]
+
+[ 2016-12-23T17:31:27+08:00 ] ::1 /ffhysc/index.php/ad/loadad.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0064s ]
+SQL: SELECT `img1`,`img2`,`img3` FROM `ad` WHERE `position` = 'home'  [ RunTime:0.0066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001435s ]
+
+[ 2016-12-23T17:31:28+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002162s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0065s ]
+SQL: select * from Service order by monthlySale desc limit 0,5 [ RunTime:0.0218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001881s ]
+
+[ 2016-12-23T17:31:28+08:00 ] ::1 /ffhysc/index.php/goods/loadservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `service` WHERE `serviceType` = 'huayike'  [ RunTime:0.0146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001481s ]
+
+[ 2016-12-23T17:31:28+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001426s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'huazhi'  [ RunTime:0.0410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2016-12-23T17:31:28+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `user` WHERE `id` = 4  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001146s ]
+
+[ 2016-12-23T17:31:28+08:00 ] ::1 /ffhysc/index.php/shopcart/countorderstatusnum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001384s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0072s ]
+SQL: select orderstatus,count(distinct orderid) as num  from orders where customerID="4" group by orderstatus [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2016-12-23T17:31:29+08:00 ] ::1 /ffhysc/index.php/index/detail.html?goodID=1&type=service
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001344s ]
+
+[ 2016-12-23T17:31:29+08:00 ] ::1 /ffhysc/index.php/goods/loadgooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0219s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `service` WHERE `id` = 1  [ RunTime:0.0088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2016-12-23T17:31:29+08:00 ] ::1 /ffhysc/index.php/index/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001447s ]
+ERR: 非法操作:undefined
+
+[ 2016-12-23T17:32:03+08:00 ] ::1 /ffhysc/index.php/index/detail.html?goodID=1&type=service
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001068s ]
+
+[ 2016-12-23T17:32:03+08:00 ] ::1 /ffhysc/index.php/goods/loadgooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001186s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0212s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `service` WHERE `id` = 1  [ RunTime:0.0075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001387s ]
+
+[ 2016-12-23T17:32:03+08:00 ] ::1 /ffhysc/index.php/index/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+ERR: 非法操作:undefined
+
+[ 2016-12-23T17:32:24+08:00 ] ::1 /ffhysc/index.php/index/detail.html?goodID=1&type=service
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2016-12-23T17:32:24+08:00 ] ::1 /ffhysc/index.php/goods/loadgooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `service` WHERE `id` = 1  [ RunTime:0.0096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002083s ]
+
+[ 2016-12-23T17:32:24+08:00 ] ::1 /ffhysc/index.php/index/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001519s ]
+ERR: 非法操作:undefined
+
+[ 2016-12-23T17:32:52+08:00 ] ::1 /ffhysc/index.php/index/detail.html?goodID=1&type=service
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2016-12-23T17:32:52+08:00 ] ::1 /ffhysc/index.php/goods/loadgooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `service` WHERE `id` = 1  [ RunTime:0.0070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001633s ]
+
+[ 2016-12-23T17:32:53+08:00 ] ::1 /ffhysc/index.php/index/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001335s ]
+ERR: 非法操作:undefined
+
+[ 2016-12-23T17:32:53+08:00 ] ::1 /ffhysc/index.php/index/detail.html?goodID=1&type=service
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001726s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000440s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000839s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2016-12-23T17:32:53+08:00 ] ::1 /ffhysc/index.php/goods/loadgooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001121s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `service` WHERE `id` = 1  [ RunTime:0.0108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001509s ]
+
+[ 2016-12-23T17:32:54+08:00 ] ::1 /ffhysc/index.php/index/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001492s ]
+ERR: 非法操作:undefined
+
+[ 2016-12-23T17:33:04+08:00 ] ::1 /ffhysc/index.php/index/detail.html?goodID=1&type=service
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2016-12-23T17:33:04+08:00 ] ::1 /ffhysc/index.php/goods/loadgooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0235s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `service` WHERE `id` = 1  [ RunTime:0.0071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002172s ]
+
+[ 2016-12-23T17:33:04+08:00 ] ::1 /ffhysc/index.php/index/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001391s ]
+ERR: 非法操作:undefined
+
+[ 2016-12-23T17:33:05+08:00 ] ::1 /ffhysc/index.php/index/detail.html?goodID=1&type=service
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2016-12-23T17:33:05+08:00 ] ::1 /ffhysc/index.php/goods/loadgooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0236s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `service` WHERE `id` = 1  [ RunTime:0.0075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001550s ]
+
+[ 2016-12-23T17:33:05+08:00 ] ::1 /ffhysc/index.php/index/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001238s ]
+ERR: 非法操作:undefined
+
+[ 2016-12-23T17:34:38+08:00 ] ::1 /ffhysc/index.php/index/detail.html?goodID=1&type=service
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2016-12-23T17:34:39+08:00 ] ::1 /ffhysc/index.php/goods/loadgooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `service` WHERE `id` = 1  [ RunTime:0.0096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002115s ]
+
+[ 2016-12-23T17:34:39+08:00 ] ::1 /ffhysc/index.php/index/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+ERR: 非法操作:undefined
+
+[ 2016-12-23T17:34:56+08:00 ] ::1 /ffhysc/index.php/index/detail.html?goodID=1&type=service
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001511s ]
+
+[ 2016-12-23T17:34:57+08:00 ] ::1 /ffhysc/index.php/goods/loadgooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `service` WHERE `id` = 1  [ RunTime:0.0090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001294s ]
+
+[ 2016-12-23T17:34:57+08:00 ] ::1 /ffhysc/index.php/index/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+ERR: 非法操作:undefined
+
+[ 2016-12-23T17:35:47+08:00 ] ::1 /ffhysc/index.php/index/home.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000318s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000586s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2016-12-23T17:35:47+08:00 ] ::1 /ffhysc/index.php/ad/loadad.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0072s ]
+SQL: SELECT `img1`,`img2`,`img3` FROM `ad` WHERE `position` = 'home'  [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001182s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001468s ]
+
+[ 2016-12-23T17:35:47+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001411s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0080s ]
+SQL: select * from Goods order by monthlySale desc limit 0,5 [ RunTime:0.0950s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001944s ]
+
+[ 2016-12-23T17:35:48+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0068s ]
+SQL: select * from Service order by monthlySale desc limit 0,5 [ RunTime:0.0253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002945s ]
+
+[ 2016-12-23T17:35:48+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `user` WHERE `id` = 0  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001283s ]
+
+[ 2016-12-23T17:35:48+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0204s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'huazhi'  [ RunTime:0.0484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001787s ]
+
+[ 2016-12-23T17:35:48+08:00 ] ::1 /ffhysc/index.php/goods/loadservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `service` WHERE `serviceType` = 'huayike'  [ RunTime:0.0116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001710s ]
+
+[ 2016-12-23T17:35:48+08:00 ] ::1 /ffhysc/index.php/shopcart/countorderstatusnum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000126s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001999s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001364s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0056s ]
+SQL: select orderstatus,count(distinct orderid) as num  from orders where customerID="" group by orderstatus [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2016-12-23T17:35:48+08:00 ] ::1 /ffhysc/index.php/index/home.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001342s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001422s ]
+
+[ 2016-12-23T17:35:49+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001123s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0074s ]
+SQL: select * from Goods order by monthlySale desc limit 0,5 [ RunTime:0.0962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001423s ]
+
+[ 2016-12-23T17:35:49+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0072s ]
+SQL: select * from Service order by monthlySale desc limit 0,5 [ RunTime:0.0201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001164s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001399s ]
+
+[ 2016-12-23T17:35:49+08:00 ] ::1 /ffhysc/index.php/goods/loadservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `service` WHERE `serviceType` = 'huayike'  [ RunTime:0.0118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001442s ]
+
+[ 2016-12-23T17:35:49+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `user` WHERE `id` = 0  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000982s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001233s ]
+
+[ 2016-12-23T17:35:49+08:00 ] ::1 /ffhysc/index.php/ad/loadad.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002114s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0066s ]
+SQL: SELECT `img1`,`img2`,`img3` FROM `ad` WHERE `position` = 'home'  [ RunTime:0.0042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001338s ]
+
+[ 2016-12-23T17:35:49+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005810s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'huazhi'  [ RunTime:0.0406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001806s ]
+
+[ 2016-12-23T17:35:49+08:00 ] ::1 /ffhysc/index.php/shopcart/countorderstatusnum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0069s ]
+SQL: select orderstatus,count(distinct orderid) as num  from orders where customerID="" group by orderstatus [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001221s ]
+
+[ 2016-12-23T17:35:51+08:00 ] ::1 /ffhysc/index.php/index/detail.html?goodID=1&type=service
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000429s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000829s ]
+
+[ 2016-12-23T17:35:51+08:00 ] ::1 /ffhysc/index.php/goods/loadgooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001243s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `service` WHERE `id` = 1  [ RunTime:0.0099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001028s ]
+
+[ 2016-12-23T17:35:52+08:00 ] ::1 /ffhysc/index.php/index/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001570s ]
+ERR: 非法操作:undefined
+
+[ 2016-12-23T17:35:54+08:00 ] ::1 /ffhysc/index.php/ad/loadad.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000125s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0062s ]
+SQL: SELECT `img1`,`img2`,`img3` FROM `ad` WHERE `position` = 'home'  [ RunTime:0.0036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001467s ]
+
+[ 2016-12-23T17:35:54+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0096s ]
+SQL: select * from Goods order by monthlySale desc limit 0,5 [ RunTime:0.0879s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001408s ]
+
+[ 2016-12-23T17:35:54+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0066s ]
+SQL: select * from Service order by monthlySale desc limit 0,5 [ RunTime:0.0212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002023s ]
+
+[ 2016-12-23T17:35:55+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'huazhi'  [ RunTime:0.0356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000920s ]
+
+[ 2016-12-23T17:35:55+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `user` WHERE `id` = 0  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001110s ]
+
+[ 2016-12-23T17:35:55+08:00 ] ::1 /ffhysc/index.php/goods/loadservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `service` WHERE `serviceType` = 'huayike'  [ RunTime:0.0128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001730s ]
+
+[ 2016-12-23T17:35:55+08:00 ] ::1 /ffhysc/index.php/shopcart/countorderstatusnum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0067s ]
+SQL: select orderstatus,count(distinct orderid) as num  from orders where customerID="" group by orderstatus [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001158s ]
+
+[ 2016-12-23T17:35:56+08:00 ] ::1 /ffhysc/index.php/index/detail.html?goodID=502&type=goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2016-12-23T17:35:56+08:00 ] ::1 /ffhysc/index.php/goods/loadgooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `goods` WHERE `id` = 502  [ RunTime:0.0204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000922s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001156s ]
+
+[ 2016-12-23T17:36:02+08:00 ] ::1 /ffhysc/index.php/ad/loadad.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001537s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0060s ]
+SQL: SELECT `img1`,`img2`,`img3` FROM `ad` WHERE `position` = 'home'  [ RunTime:0.0034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001345s ]
+
+[ 2016-12-23T17:36:03+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002361s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0080s ]
+SQL: select * from Goods order by monthlySale desc limit 0,5 [ RunTime:0.0842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001577s ]
+
+[ 2016-12-23T17:36:03+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001199s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `user` WHERE `id` = 0  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001291s ]
+
+[ 2016-12-23T17:36:03+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0068s ]
+SQL: select * from Service order by monthlySale desc limit 0,5 [ RunTime:0.0180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003188s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003537s ]
+
+[ 2016-12-23T17:36:03+08:00 ] ::1 /ffhysc/index.php/goods/loadservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `service` WHERE `serviceType` = 'huayike'  [ RunTime:0.0121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001577s ]
+
+[ 2016-12-23T17:36:03+08:00 ] ::1 /ffhysc/index.php/shopcart/countorderstatusnum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0066s ]
+SQL: select orderstatus,count(distinct orderid) as num  from orders where customerID="" group by orderstatus [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2016-12-23T17:36:03+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000187s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'huazhi'  [ RunTime:0.0344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002220s ]
+
+[ 2016-12-23T17:36:04+08:00 ] ::1 /ffhysc/index.php/index/detail.html?goodID=1&type=service
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000969s ]
+
+[ 2016-12-23T17:36:05+08:00 ] ::1 /ffhysc/index.php/goods/loadgooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `service` WHERE `id` = 1  [ RunTime:0.0092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001029s ]
+
+[ 2016-12-23T17:36:05+08:00 ] ::1 /ffhysc/index.php/index/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+ERR: 非法操作:undefined
+
+[ 2016-12-23T17:36:09+08:00 ] ::1 /ffhysc/index.php/ad/loadad.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0062s ]
+SQL: SELECT `img1`,`img2`,`img3` FROM `ad` WHERE `position` = 'home'  [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001382s ]
+
+[ 2016-12-23T17:36:09+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001640s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0101s ]
+SQL: select * from Goods order by monthlySale desc limit 0,5 [ RunTime:0.0846s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001202s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001473s ]
+
+[ 2016-12-23T17:36:09+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001617s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0231s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0067s ]
+SQL: select * from Service order by monthlySale desc limit 0,5 [ RunTime:0.0194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001470s ]
+
+[ 2016-12-23T17:36:09+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'huazhi'  [ RunTime:0.0397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001146s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001673s ]
+
+[ 2016-12-23T17:36:09+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `user` WHERE `id` = 0  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2016-12-23T17:36:10+08:00 ] ::1 /ffhysc/index.php/goods/loadservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001724s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `service` WHERE `serviceType` = 'huayike'  [ RunTime:0.0136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001232s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001526s ]
+
+[ 2016-12-23T17:36:10+08:00 ] ::1 /ffhysc/index.php/shopcart/countorderstatusnum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0073s ]
+SQL: select orderstatus,count(distinct orderid) as num  from orders where customerID="" group by orderstatus [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001247s ]
+
+[ 2016-12-23T17:36:10+08:00 ] ::1 /ffhysc/index.php/index/detail.html?goodID=2&type=service
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000552s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002154s ]
+
+[ 2016-12-23T17:36:11+08:00 ] ::1 /ffhysc/index.php/goods/loadgooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001013s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0234s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `service` WHERE `id` = 2  [ RunTime:0.0108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001935s ]
+
+[ 2016-12-23T17:36:11+08:00 ] ::1 /ffhysc/index.php/index/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+ERR: 非法操作:undefined
+
+[ 2016-12-23T17:36:43+08:00 ] ::1 /ffhysc/index.php/index/detail.html?goodID=2&type=service
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2016-12-23T17:36:44+08:00 ] ::1 /ffhysc/index.php/goods/loadgooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `service` WHERE `id` = 2  [ RunTime:0.0116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003018s ]
+
+[ 2016-12-23T17:36:44+08:00 ] ::1 /ffhysc/index.php/index/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000972s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001373s ]
+ERR: 非法操作:undefined
+
+[ 2016-12-23T17:36:54+08:00 ] ::1 /ffhysc/index.php/ad/loadad.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0234s ]
+SQL: SHOW COLUMNS FROM `ad` [ RunTime:0.0367s ]
+SQL: SELECT `img1`,`img2`,`img3` FROM `ad` WHERE `position` = 'home'  [ RunTime:0.0038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001450s ]
+
+[ 2016-12-23T17:36:54+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001243s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0077s ]
+SQL: select * from Service order by monthlySale desc limit 0,5 [ RunTime:0.0214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001650s ]
+
+[ 2016-12-23T17:36:55+08:00 ] ::1 /ffhysc/index.php/goods/loadrecommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001773s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0070s ]
+SQL: select * from Goods order by monthlySale desc limit 0,5 [ RunTime:0.0786s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001626s ]
+
+[ 2016-12-23T17:36:55+08:00 ] ::1 /ffhysc/index.php/user/loadusermessage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001724s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `user` WHERE `id` = 0  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001117s ]
+
+[ 2016-12-23T17:36:55+08:00 ] ::1 /ffhysc/index.php/goods/loadgoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `goods` WHERE `goodType` = 'huazhi'  [ RunTime:0.0310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001893s ]
+
+[ 2016-12-23T17:36:55+08:00 ] ::1 /ffhysc/index.php/goods/loadservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `service` WHERE `serviceType` = 'huayike'  [ RunTime:0.0112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001716s ]
+
+[ 2016-12-23T17:36:55+08:00 ] ::1 /ffhysc/index.php/shopcart/countorderstatusnum.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0049s ]
+SQL: select orderstatus,count(distinct orderid) as num  from orders where customerID="" group by orderstatus [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000846s ]
+
+[ 2016-12-23T17:36:57+08:00 ] ::1 /ffhysc/index.php/index/detail.html?goodID=500&type=goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000273s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000597s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001888s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2016-12-23T17:36:57+08:00 ] ::1 /ffhysc/index.php/goods/loadgooddetail.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `goods` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `service` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `goods` WHERE `id` = 500  [ RunTime:0.0170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001558s ]
+
+[ 2016-12-23T17:37:05+08:00 ] ::1 /ffhysc/index.php/shopcart/addtoshopcart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `shopcart` WHERE `goodID` = '500' AND `customerID` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `shopcart` (`goodID`,`customerID`) VALUES ('500','0') [ RunTime:0.1957s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000969s ]
+
+[ 2016-12-23T17:37:09+08:00 ] ::1 /ffhysc/index.php/shopcart/makenewlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0044s ]
+SQL: INSERT INTO `orders` (`orderID`,`totalMoney`,`customerID`,`orderStatus`,`orderTime`,`goodID`) VALUES ('X2k7HKaJ','45','0','0','2016-12-23 17:37:09','500') [ RunTime:0.0679s ]
+NOTIC: [2] Illegal offset type in isset or empty D:\PHP\myPHP\ffhysc\ThinkPHP\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `shopcart` WHERE `goodID` = '500' AND `customerID` = 0 [ RunTime:0.0298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000962s ]
+
+[ 2016-12-23T17:37:09+08:00 ] ::1 /ffhysc/index.php/index/confirmed.html?orderID=X2k7HKaJ&orderTime=2016-12-23%2017:37:09
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000473s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2016-12-23T17:37:09+08:00 ] ::1 /ffhysc/index.php/shopcart/loadconfirmlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `orders` INNER JOIN goods ON goods.id=orders.goodID  WHERE `orderID` = 'X2k7HKaJ' AND `customerID` = '' AND `orderStatus` = 0  [ RunTime:0.0197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006608s ]
+
+[ 2016-12-23T17:37:09+08:00 ] ::1 /ffhysc/index.php/shopcart/loadconfirmlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001141s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `shopcart` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `orders` INNER JOIN service ON service.id=orders.goodID  WHERE `orderID` = 'X2k7HKaJ' AND `customerID` = '' AND `orderStatus` = 0  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001030s ]
+
+[ 2016-12-23T17:37:09+08:00 ] ::1 /ffhysc/index.php/user/loadaddressmsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `receive` WHERE `userID` = 0  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000975s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001189s ]
+
+[ 2016-12-23T17:37:21+08:00 ] ::1 /ffhysc/index.php/index/address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2016-12-23T17:37:21+08:00 ] ::1 /ffhysc/index.php/user/loadaddressmsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `receive` WHERE `userID` = 0  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001251s ]
+
+[ 2016-12-23T17:37:28+08:00 ] ::1 /ffhysc/index.php/index/address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000417s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001374s ]
+
+[ 2016-12-23T17:37:28+08:00 ] ::1 /ffhysc/index.php/user/loadaddressmsg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001123s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0324s ]
+SQL: SELECT * FROM `receive` WHERE `userID` = 0  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2016-12-23T17:37:32+08:00 ] ::1 /ffhysc/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2016-12-23T17:37:39+08:00 ] ::1 /ffhysc/index.php/user/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `receive` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`password` FROM `user` WHERE `username` = 'huanxgaunwwei'  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\PHP\myPHP\ffhysc\Modules\Index\Controller\UserController.class.php 第 52 行.
+NOTIC: [8] Undefined offset: 0 D:\PHP\myPHP\ffhysc\Modules\Index\Controller\UserController.class.php 第 60 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+

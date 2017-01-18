@@ -1,0 +1,20 @@
+[ 2016-12-08T17:33:28+08:00 ] ::1 /ffhysc/index.php/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.022182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022319s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.047033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.047134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011501s ]
+
