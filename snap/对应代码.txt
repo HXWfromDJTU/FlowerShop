@@ -1,0 +1,695 @@
+1、-----------------------------------------------------------------------------------------------------------
+
+
+/*postMedia()方法用于插入发表的媒体内容*/
+	public function findback() {
+		$username = $_POST["find_username"];
+		$find_mail = $_POST["find_mail"];
+		$resData = array();
+		$resData["message"] = "succ";
+		$resData["code"] = "0000";
+		/*调用model，传相关参数给model，并调用对应model下的方法进行数据库操作*/
+		$rs = $this -> userPath -> findMail($username);
+		/*比较提交密码与查询密码是否正确*/
+		if ($find_mail == $rs[0]["email"]) {
+			/*$this -> add($find_mail,"正在找回密码","您的账号是：".$username."密码是：".$rs[0]["password"]);*/
+			if (SendMail($find_mail, "正在找回密码", "您的账号是：" . $username . "密码是：" . $rs[0]["password"])) {
+				$resData["data"]["find-status"] = "succ";
+			} else {
+				$resData["data"]["find-status"] = "mail-fail";
+			}
+		} else {
+			$resData["data"]["find-status"] = "not-match";
+		}
+		/*返回结果集给前端*/
+		echo json_encode($resData);
+	}
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+2、------------------------------------------------------------------------------------------------------------------------
+
+if ($find_mail == $rs[0]["email"]) {
+			/*$this -> add($find_mail,"正在找回密码","您的账号是：".$username."密码是：".$rs[0]["password"]);*/
+			if (SendMail($find_mail, "正在找回密码", "您的账号是：" . $username . "密码是：" . $rs[0]["password"])) {
+				$resData["data"]["find-status"] = "succ";
+			} else {
+				$resData["data"]["find-status"] = "mail-fail";
+			}
+		} else {
+			$resData["data"]["find-status"] = "not-match";
+		}
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+3、----------------------------------------------------------------------------------------------------------------------
+							<li>
+								<div class="item-content">
+									<div class="item-media"><i class="icon icon-form-name"></i></div>
+									<div class="item-inner">
+										<div class="item-input">
+											<input id="log_username" type="text" placeholder="请输入用户名">
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item-content">
+									<div class="item-media"><i class="icon icon-form-email"></i></div>
+									<div class="item-inner">
+										<div class="item-input">
+											<input id="log_password" type="password" placeholder="请输入密码">
+										</div>
+									</div>
+								</div>
+							</li>
+							</li>
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+4、----------------------------------------------------------------------------------------------------------------------
+
+<li>
+								<div class="item-content">
+									<div class="item-media"><i class="icon icon-form-name"></i></div>
+									<div class="item-inner">
+										<div class="item-input">
+											<input id="find_username" type="text" placeholder="请输入用户名">
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item-content">
+									<div class="item-media"><i class="icon icon-form-email"></i></div>
+									<div class="item-inner">
+										<div class="item-input">
+											<input id="find_mail" type="text" placeholder="注册时预留的邮箱">
+										</div>
+									</div>
+								</div>
+							</li>
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+5、----------------------------------------------------------------------------------------------------------------------
+
+							<li>
+								<div class="item-content">
+									<div class="item-media"><i class="icon icon-form-name"></i></div>
+									<div class="item-inner">
+										<div class="item-input">
+											<input id="log_username" type="text" placeholder="请输入用户名">
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="item-content">
+									<div class="item-media"><i class="icon icon-form-email"></i></div>
+									<div class="item-inner">
+										<div class="item-input">
+											<input id="log_password" type="password" placeholder="请输入密码">
+										</div>
+									</div>
+								</div>
+							</li>
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+6、----------------------------------------------------------------------------------------------------------------------
+
+<li>
+							<a>
+								<div onclick="$.toShopcart()" class="item-content">
+									<div class="item-inner">
+										<div class="item-title label" style='width: 60%;'>购物车</div>
+										<div class="item-input">
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="close-panel">
+							<a onclick="$.logout()">
+								<div class="item-content">
+									<div class="item-inner">
+										<div class="item-title label" style='width: 60%;'>退出登录</div>
+										<div class="item-input">
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+7、----------------------------------------------------------------------------------------------------------------------
+
+
+夜间模式到代码，属于框架自带
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+8、----------------------------------------------------------------------------------------------------------------------
+
+			$.addToshopcart = function(goodID) {
+				$.ajax({
+					type: "post",
+					url: "{:U('shopcart/addToshopcart')}",
+					async: true,
+					data: {
+						goodID: goodID,
+						userID: sessionStorage.getItem("userID")
+					},
+					success: function(d) {
+						var data = JSON.parse(d);
+						/*通过交易码来检查与后端的换流是否正常,0000表示正常*/
+						if(data.code == "0000") {
+							if(data.data == "repeat") {
+								$.toast("您已收藏过这个商品/服务！");
+							} else {
+								$.toast("加入购物车成功！");
+							}
+						} else {
+							$.toast("通讯异常");
+						}
+					}
+				});
+			}
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+9、----------------------------------------------------------------------------------------------------------------------
+
+<div class="swiper-container swiper-container-horizontal" data-space-between="10">
+					<!--首页广告位-->
+					<div id="adContainer" class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img class='card-cover' src="" alt="广告图1">
+						</div>
+						<div class="swiper-slide">
+							<img class='card-cover' src="" alt="广告图2">
+						</div>
+						<div class="swiper-slide">
+							<img class='card-cover' src="" alt="广告图3">
+						</div>
+					</div>
+					<div class="swiper-pagination"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+				</div>
+				<!--首页搜索栏-->
+				<div class="bar bar-header-secondary">
+					<div class="searchbar">
+						<a class="searchbar-cancel">Cancel</a>
+						<div class="search-input">
+							<label class="icon icon-search" for="search"></label>
+							<input type="search" id='search' placeholder='搜索花艺/服务' />
+						</div>
+					</div>
+				</div>
+				<div id="recommendGoodContainer" class="infinite-scroll-preloader">
+					
+				</div>
+
+			</div>
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+10、----------------------------------------------------------------------------------------------------------------------
+
+$.loadShopcart = function(type) {
+				$.ajax({
+					type: "post",
+					url: "{:U('goods/loadShopcart')}",
+					async: true,
+					data: {
+						type: type,
+						userID: sessionStorage.getItem("userID")
+					},
+					success: function(d) {
+						var data = JSON.parse(d);
+						/*通过交易码来检查与后端的换流是否正常,0000表示正常*/
+						if(data.code == "0000") {
+							var tempStr = [];
+							data.data.forEach(function(arg, index) {
+							    //***************
+							});
+
+							$('#shopcartItemContainer').append(tempStr.join(''));
+						} else {
+							$.toast("通讯异常");
+						}
+					}
+				});
+			}
+
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+11、----------------------------------------------------------------------------------------------------------------------
+
+/*搜索热门商品的方法,在这里不适用于后台数据库的交互，直接在推荐商品里面挑选*/
+			$.searchGood = function(keyword) {
+				$(".card.facebook-card").forEach(function(arg, index) {
+					if(arg.firstChild.firstChild.innerHTML.indexOf(keyword) == -1) {
+						arg.style.display = "none";
+					}
+				});
+			}
+
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+12、----------------------------------------------------------------------------------------------------------------------
+
+/*加载商品详情,渲染页面*/
+			$.loadGoodDetail = function(goodID, type) {
+				$.ajax({
+					type: "post",
+					url: "{:U('goods/loadGoodDetail')}",
+					async: true,
+					data: {
+						goodID: goodID,
+						type: type
+					},
+					success: function(d) {
+						var data = JSON.parse(d);
+						/*通过交易码来检查与后端的换流是否正常,0000表示正常*/
+						if(data.code == "0000") {
+							/*console.log(data.data[0].name)*/
+							$(".swiper-slide img")[0].src = data.data[0].img1;
+							$(".swiper-slide img")[1].src = data.data[0].img2;
+							$(".swiper-slide img")[2].src = data.data[0].img3;
+							$("#name").text(data.data[0].name);
+							$("#price").text(data.data[0].price);
+							/*渲染介绍详情内容*/
+							$(".text-container").text(data.data[0]["description"])
+								/*渲染图片内容*/
+							var tempStr = [];
+							tempStr.push('<img src=' + data.data[0].detailimg1 + ' width="100%">')
+							tempStr.push('<img src=' + data.data[0].detailimg2 + ' width="100%">')
+							tempStr.push('<img src=' + data.data[0].detailimg3 + ' width="100%">')
+							$('.img-container').empty();
+							$('.img-container').append(tempStr.join(''));
+							$('.img-container img').forEach(function(arg, index) {
+								if(arg.src.length < 200) {
+									arg.remove()
+								}
+							});
+							/*规格页面渲染*/
+							if(type == "goods") {
+								  //
+							} else {
+								  //
+							}
+
+						} else {
+							$.toast("通讯异常");
+						}
+					}
+				});
+			}
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+13、----------------------------------------------------------------------------------------------------------------------
+
+/*添加新评论*/
+			$.pushComment = function(goodID, userID, content, type) {
+					$.ajax({
+						type: "post",
+						url: "{:U('comment/pushComment')}",
+						async: true,
+						data: {
+							goodID: goodID,
+							userID: userID,
+							content: content,
+							type: type
+						},
+						success: function(d) {
+							var data = JSON.parse(d);
+							/*通过交易码来检查与后端的换流是否正常,0000表示正常*/
+							if(data.code == "0000") {
+								var tempStr = [];
+								tempStr.push('<li>')
+								tempStr.push('<div class="item-content">')
+								tempStr.push('<div class="item-media"><img src=' + data.data[0].headimgsrc + ' width="44"></div>')
+								tempStr.push('<div class="item-inner">')
+								tempStr.push('<div class="item-title-row">')
+								tempStr.push('<div class="item-title">' + data.data[0].nickname + '</div>')
+								tempStr.push('<div class="item-after">不久之前</div>')
+								tempStr.push('</div>')
+								tempStr.push('<div class="item-text">' + content + '</div>')
+								tempStr.push('</div>')
+								tempStr.push('</div>')
+								tempStr.push('</li>')
+								$('#comment-container').prepend(tempStr.join(''));
+								$("#comment").val("")
+							} else {
+								$.toast("通讯异常");
+							}
+						}
+					});
+				}
+
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+14、----------------------------------------------------------------------------------------------------------------------
+
+$.loadConfirmList = function(orderID, type) {
+				$.ajax({
+					type: "post",
+					url: "{:U('shopcart/loadConfirmList')}",
+					async: true,
+					data: {
+						orderID: orderID,
+						userID: sessionStorage.getItem("userID"),
+						type: type
+					},
+					success: function(d) {
+						var data = JSON.parse(d);
+						/*通过交易码来检查与后端的换流是否正常,0000表示正常*/
+						if(data.code == "0000") {
+							//此处可能为遗留问题，区分返回的数据是否为空，若为空则不进行dom的渲染
+							if(data.data.length != 0) {
+								var tempStr = [];
+								data.data.forEach(function(arg, index) {
+									
+								});
+								$('#confirmItemContainer').append(tempStr.join(''));
+								//加载list成功之后，显示总价格
+								for(var i = 0; i < $(".realPrice").length; i++) {
+									total = $("#totalMoney")[0].innerHTML = parseInt($("#totalMoney").text()) + parseInt($(".realPrice")[i].innerHTML);
+								}
+								var discount = Math.floor(10 * Math.random());
+								$("#discout").text(discount);
+								/*console.log(total);
+								console.log(discount);
+								console.log(total - parseInt(discount));*/
+								$("#totalMoney").text(total - parseInt(discount));
+							}
+
+						} else {
+							$.toast("通讯异常");
+						}
+					}
+				});
+			}
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+15、----------------------------------------------------------------------------------------------------------------------
+//执行支付的方法
+			$.pay = function() {
+				$.prompt("请输入支付密码", function(payPassword) {
+					$.ajax({
+						type: "post",
+						url: "{:U('shopcart/checkPayPassword')}",
+						async: true,
+						data: {
+							userID: sessionStorage.getItem("userID"),
+							payPassword: payPassword,
+							orderID:$.getQueryString("orderID"),
+							total:parseInt($("#totalMoney").text())
+						},
+						success: function(d) {
+							var data = JSON.parse(d);
+							/*通过交易码来检查与后端的换流是否正常,0000表示正常*/
+							if(data.code == "0000") {
+								if(data.data["pay-status"]=="succ"){
+									$.alert("支付成功,三秒后回到首页");
+									var t=setTimeout("$.linkToHome()",3000);
+								}else if(data.data["pay-status"]=="notEnough"){
+									$.alert("您的账户余额不足");
+								}else{
+									$.alert("密码错误");
+								}
+							} else {
+								$.alert("通讯异常");
+							}
+						}
+					});
+				})
+			}
+
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+16、----------------------------------------------------------------------------------------------------------------------
+/*通过交易码来检查与后端的换流是否正常,0000表示正常*/
+
+
+
+							if(data.code == "0000") {
+								if(data.data["pay-status"]=="succ"){
+									$.alert("支付成功,三秒后回到首页");
+									var t=setTimeout("$.linkToHome()",3000);
+								}else if(data.data["pay-status"]=="notEnough"){
+									$.alert("您的账户余额不足");
+								}else{
+									$.alert("密码错误");
+								}
+							} else {
+								$.alert("通讯异常");
+							}
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+17、----------------------------------------------------------------------------------------------------------------------
+
+	/*加入购物车方法*/
+			$.addToshopcart = function(goodID) {
+					$.ajax({
+						type: "post",
+						url: "{:U('shopcart/addToshopcart')}",
+						async: true,
+						data: {
+							goodID: goodID,
+							userID: sessionStorage.getItem("userID")
+						},
+						success: function(d) {
+							var data = JSON.parse(d);
+							/*通过交易码来检查与后端的换流是否正常,0000表示正常*/
+							if(data.code == "0000") {
+								if(data.data == "repeat") {
+									$.toast("您已收藏过这个商品/服务！");
+								} else {
+									$.toast("加入购物车成功！");
+								}
+							} else {
+								$.toast("通讯异常");
+							}
+						}
+					});
+				}
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+18、----------------------------------------------------------------------------------------------------------------------
+
+$.loadOrderBizList = function(orderStatus, goodType) {
+					$.ajax({
+						type: "post",
+						url: "{:U('shopcart/loadOrderBizList')}",
+						async: true,
+						data: {
+							orderStatus: orderStatus,
+							goodType: goodType
+						},
+						success: function(d) {
+							var data = JSON.parse(d);
+							/*通过交易码来检查与后端的换流是否正常,0000表示正常*/
+							if(data.code == "0000") {
+								var tempStr = [];
+								data.data.forEach(function(arg, index) {
+
+								});
+								if(goodType == "goods") {
+									$('#OrderListContainer' + orderStatus).empty();
+								}
+								$('#OrderListContainer' + orderStatus).append(tempStr.join(''));
+							} else {
+								$.toast("通讯异常");
+							}
+
+						}
+					});
+
+				}
+
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+19、----------------------------------------------------------------------------------------------------------------------
+
+$("#submitChange").on("click", function() {
+				var re = /(^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+)|(^$)/;
+				if(!re.test($("#email").val())) {
+					$.toast("请输入有效的电子邮箱，有助于找回密码！");
+					return;
+				}
+				if($("#nickname").val().length == 0 || $("#password").val().length == 0 || $("#introduction").val().length == 0  || $("#birthday").val() == 0) {
+					$.toast("未填写完整~")
+				} else {
+					$.ajax({
+						type: "post",
+						url: "{:U('user/changeUserInfo')}",
+						async: true,
+						data: {
+							userID:sessionStorage.getItem("userID"),
+							nickname: $("#nickname").val(),
+							password: $("#password").val(),
+							introduction: $("#introduction").val(),
+							email: $("#email").val(),
+							birthday: $("#birthday").val()
+						},
+						success: function(d) {
+							var data = JSON.parse(d);
+							/*通过交易码来检查与后端的换流是否正常,0000表示正常*/
+							if(data.code == "0000") {
+								$.toast("更改用户信息成功");
+							} else {
+								$.toast("通讯异常");
+							}
+						}
+					});
+				}
+			})
+
+
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+20、----------------------------------------------------------------------------------------------------------------------
+
+/*实现全选的功能*/
+			$(".selectAll").on("change", function() {
+				var totalMoney=0;
+				if($(".selectAll")[0].checked == true) {
+					for(var i = 0; i < $(".shopcartCheckbox").length; i++) {
+						$(".shopcartCheckbox")[i].checked = true;
+						totalMoney += parseInt($(".realPrice")[i].innerText);
+						$("#totalMoney")[0].innerHTML=totalMoney;
+					}
+				} else {
+					for(var i = 0; i < $(".shopcartCheckbox").length; i++) {
+						$(".shopcartCheckbox")[i].checked = false;
+						$("#totalMoney")[0].innerHTML=0;
+					}
+				}
+			})
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+21、----------------------------------------------------------------------------------------------------------------------
+
+<div class="popup popup-about">
+			<header class="bar bar-nav">
+				<a class="button button-link button-nav pull-right close-popup">
+					了解
+				</a>
+				<h1 class="title">芬芳花艺商城</h1>
+			</header>
+			<div class="content">
+				<div class="content-inner">
+					<div class="content-block">
+						<p>芬芳花艺商城是国内首个在线花艺商城</p>
+						<p>
+							<a class="button close-popup">OK</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+22、----------------------------------------------------------------------------------------------------------------------
+
+<div id="tab1" class="tab">
+						<div class="content-block">
+							<div class="list-block media-list">
+								<ul id="OrderListContainer1">
+
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
+
+23、----------------------------------------------------------------------------------------------------------------------
+
+//更改默认收货人信息
+			$.changeReceiveDefault = function(receiveID) {
+				$.ajax({
+					type: "post",
+					url: "{:U('user/changeReceiveDefault')}",
+					async: true,
+					data: {
+						receiveID: receiveID,
+						userID: sessionStorage.getItem("userID")
+					},
+					success: function(d) {
+						var data = JSON.parse(d);
+						/*通过交易码来检查与后端的换流是否正常,0000表示正常*/
+						if(data.code == "0000") {
+							$.toast("修改默认地址成功！");
+						} else {
+							$.toast("通讯异常");
+						}
+
+					}
+				});
+
+			}
+
+
+
+
+//---------------------------------------------------------我是分割线------------------------------------------------------
+
