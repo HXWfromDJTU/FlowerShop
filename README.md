@@ -20,3 +20,8 @@
 ![image](https://github.com/HXWfromDJTU/FlowerShop/blob/master/snap/snap%20(21).png)
 ![image](https://github.com/HXWfromDJTU/FlowerShop/blob/master/snap/snap%20(22).png)
 ![image](https://github.com/HXWfromDJTU/FlowerShop/blob/master/snap/snap%20(23).png)
+![image](https://github.com/HXWfromDJTU/FlowerShop/blob/master/snap/snap%20(25).png)
+![image](https://github.com/HXWfromDJTU/FlowerShop/blob/master/snap/snap%20(24).png)
+![image](https://github.com/HXWfromDJTU/FlowerShop/blob/master/snap/snap%20(26).png)
+![image](https://github.com/HXWfromDJTU/FlowerShop/blob/master/snap/snap%20(27).png)
+![image](https://github.com/HXWfromDJTU/FlowerShop/blob/master/snap/snap%20(28).png)
