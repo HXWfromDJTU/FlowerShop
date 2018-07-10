@@ -1,5 +1,6 @@
-#FlowerShop
-
+# FlowerShop
+`# 需要配置SAMP开发环境`
+`# 需要MySQL建立数据库表`
 ![image](https://github.com/HXWfromDJTU/FlowerShop/blob/master/snap/snap%20(1).png)
 ![image](https://github.com/HXWfromDJTU/FlowerShop/blob/master/snap/snap%20(2).png)
 ![image](https://github.com/HXWfromDJTU/FlowerShop/blob/master/snap/snap%20(3).png)
